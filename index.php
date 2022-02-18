@@ -80,6 +80,7 @@ if($month == 'December') {
 }
 
 echo "----------------------<br>";
+$countries = ["Japan" => "Tokyo", "Mexico" => "Mexico City", "USA" => "New York City", "India" => "Mumbai", "Shanghai" => "China", 'Lagos' => 'Nigeria', 'Buenos Aires' => 'Argentina', 'Cairo' => 'Egypt', 'London' => 'England'];
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en">
@@ -95,9 +96,8 @@ echo "----------------------<br>";
     
     <!-- dropdown goes here... -->
 <?php
-    $countries = ["Japan" => "Tokyo", "Mexico" => "Mexico City", "USA" => "New York City", "India" => "Mumbai", "Shanghai" => "Seoul"];
   foreach($countries as $country => $city) {
-    echo "<option>$city</option>";
+    echo "<option>$country:  $city</option>";
   }
   ?>
 
